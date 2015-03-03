@@ -1,5 +1,7 @@
 package com.seadowg.hellokotlin
 
+import spark.Spark.*
+
 fun main(args: Array<String>) {
-  println("Hello World!")
+  get("/", { req, res -> "Hello World!" }) 
 }
