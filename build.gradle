@@ -1,22 +1,26 @@
 buildscript {
   repositories {
     mavenCentral()
+    jcenter()
   }
+
   dependencies {
     classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:0.10.195'
+    classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.0'
   }
 }
 
 apply plugin: "kotlin"
 apply plugin: "application"
+apply plugin: 'com.github.johnrengelman.shadow'
 
 mainClassName = "com.seadowg.hellokotlin.HellokotlinPackage"
 
-repositories {
-  mavenCentral()
-}
-
 dependencies {
+  repositories {
+    jcenter()
+  }
+
   compile 'org.jetbrains.kotlin:kotlin-stdlib:0.10.195'
   compile 'com.sparkjava:spark-core:2.1'
 }

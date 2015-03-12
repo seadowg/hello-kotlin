@@ -7,5 +7,5 @@ three 'Hello World' applications on three branches:
 line hello world. Run with `./gradlew run`.
 * [web](https://github.com/seadowg/hello-kotlin/tree/web) - A web hello world using
 [Spark](http://sparkjava.com/). Run with `./gradlew run` and open [http://localhost:4567](http://localhost:4567)
-to prove Kotlin can do internet.
+to prove Kotlin can do internet. Can also be pushed to Cloud Foundry (proof [here](http://hello-kotlin.cfapps.io/)).
 * [android](https://github.com/seadowg/hello-kotlin/tree/android) - A hello world app for Android. Plug in a phone with USB debugging enabled and run `./gradlew installDebug` and open "Hello Kotlin" to prove Kotlin can also do Android.
