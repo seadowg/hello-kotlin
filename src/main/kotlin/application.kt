@@ -4,7 +4,9 @@ import spark.Spark.*
 import spark.SparkBase.port
 
 fun main(args: Array<String>) {
-  port(Integer.parseInt(System.getenv().get("PORT")))
+  val sysPort: String = System.getenv().get("PORT") ?: "4567"
+
+  port(Integer.parseInt(sysPort))
 
   get("/", { req, res -> "Hello World!" })
 }
